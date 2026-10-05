@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Studio</title>
+<style>
+:root{--blue:#2563eb;--light:#60a5fa;--dark:#111827;--muted:#64748b;--line:#e5e7eb;--bg:#f7f9fc;--red:#dc2626;--green:#16a34a;--gold:#f59e0b}
+*{box-sizing:border-box}html{background:#fff}body{margin:0;background:var(--bg);color:var(--dark);font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}main{max-width:700px;margin:auto;padding:16px 16px 92px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:17px;margin:12px 0;box-shadow:0 1px 2px #00000008}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}h1{font-size:27px;margin:4px 0 18px}h2{font-size:18px;margin:0 0 10px}.muted,.tag{color:var(--muted)}.tag{font-size:12px;margin-top:3px}.big{font-size:32px;font-weight:800;margin:10px 0}.pill{font-size:12px;color:var(--blue);background:#eff6ff;padding:6px 9px;border-radius:20px;font-weight:650}.track{height:14px;background:#e5e7eb;border-radius:99px;overflow:hidden;position:relative}.fill{height:100%;width:0;border-radius:99px;transition:width .45s ease,background .25s}.labels{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:7px}.btn{width:100%;padding:13px;border:0;border-radius:12px;background:var(--blue);color:#fff;font-weight:700;margin:7px 0;font-size:15px}.secondary{background:#fff;color:var(--blue);border:1px solid #cbd5e1}.item{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #f1f5f9}.item:last-child{border:0}.item input{width:20px;height:20px;accent-color:var(--blue)}.desc{flex:1}.done{text-decoration:line-through;color:var(--muted)}.danger{color:var(--red)}.nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:10}.nav button{border:0;background:none;color:var(--muted);font-size:12px;min-width:72px;padding:4px}.nav .active{color:var(--blue);font-weight:800}.icon{font-size:21px;line-height:21px;margin-bottom:2px}.view{display:none}.view.active{display:block}input,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:11px;margin:7px 0 12px;font:inherit;background:#fff}label{font-size:13px;font-weight:650}.modal{position:fixed;inset:0;background:#0006;display:none;align-items:flex-end;z-index:20}.modal.open{display:flex}.sheet{background:#fff;width:100%;padding:20px 18px calc(20px + env(safe-area-inset-bottom));border-radius:24px 24px 0 0;max-height:90vh;overflow:auto}.notice{padding:13px;border-left:4px solid var(--red);background:#fff7f7;border-radius:10px;margin:10px 0}.empty{padding:15px 0;color:var(--muted);text-align:center}.goal-date{font-size:11px;color:var(--muted);margin-top:5px}.linechart{height:250px;position:relative;margin-top:12px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);touch-action:pan-y}.linechart svg{width:100%;height:100%;overflow:visible}.gridline{stroke:#eef2f7;stroke-width:1}.line{fill:none;stroke:var(--blue);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.area{fill:#2563eb14}.point{fill:#fff;stroke:var(--blue);stroke-width:3;cursor:pointer}.chart-tooltip{position:absolute;display:none;background:#111827;color:#fff;padding:7px 9px;border-radius:9px;font-size:12px;pointer-events:none;white-space:nowrap;z-index:2}.chart-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:7px}.seg{display:flex;background:#f1f5f9;border-radius:11px;padding:3px;margin:8px 0 12px}.seg button{flex:1;border:0;background:transparent;padding:8px;border-radius:8px;font-weight:650;color:var(--muted)}.seg button.active{background:#fff;color:var(--dark);box-shadow:0 1px 3px #0001}.xpbox{padding:16px;border-radius:17px;background:#f8fafc;border:1px solid var(--line)}.xpbar{height:9px;background:#e5e7eb;border-radius:99px;overflow:hidden;margin:10px 0}.xpfill{height:100%;background:var(--blue);border-radius:99px;transition:width .4s}.level{font-size:34px;font-weight:850}.reward{display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #f1f5f9}.reward:last-child{border:0}.reward.locked{opacity:.42}.reward-icon{width:42px;height:42px;border-radius:13px;background:#eff6ff;display:grid;place-items:center;font-size:21px}.locked .reward-icon{background:#f1f5f9}.small{font-size:12px}.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(15px);background:#111827;color:#fff;padding:12px 16px;border-radius:13px;opacity:0;pointer-events:none;transition:.25s;z-index:30;white-space:nowrap}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.start-card{border:1px solid #bfdbfe}.start-card .btn{font-size:17px;padding:15px}.streak{margin-top:4px;font-size:12px;font-weight:800}.level-title{font-size:13px;color:var(--blue);font-weight:800;letter-spacing:.04em;text-transform:uppercase}.reward.unlocked{border-left:3px solid var(--blue);padding-left:10px}.reward .small{line-height:1.35}
+</style>
+</head>
+<body>
+<main>
+<section id="home" class="view active">
+  <div id="alert"></div>
+  <div class="card">
+    <div class="row"><h2>Progresso di oggi</h2><span id="status" class="pill">In corso</span></div>
+    <div id="time" class="big">0h 00m <span class="muted" style="font-size:15px;font-weight:400">/ 3h ideali</span></div>
+    <div class="track"><div id="bar" class="fill"></div></div>
+    <div class="labels"><span>0</span><span>1h30 minimo</span><span>3h ideale</span></div>
+    <p id="msg" class="muted"></p>
+    <button class="btn" onclick="openM('session')">＋ Registra sessione</button>
+  </div>
+  <div class="card"><div class="row"><h2>Obiettivi di oggi</h2><span id="gc" class="muted"></span></div><div id="goals"></div><button class="btn secondary" onclick="openM('goal')">＋ Nuovo obiettivo</button></div>
+  <div class="card"><div class="row"><h2>Sport di oggi</h2><span class="pill">Routine</span></div><div class="item"><input id="swim" type="checkbox" onchange="sports()"><div class="desc"><b>Nuoto</b><div class="tag">Allenamento previsto</div></div></div><div class="item"><input id="gym" type="checkbox" onchange="sports()"><div class="desc"><b>Palestra</b><div class="tag">Facoltativa</div></div></div></div>
+</section>
+
+<section id="plan" class="view">
+  <div class="card"><div class="row"><h2>Piano</h2><span class="pill">Tu decidi</span></div><p id="suggest" class="muted"></p><button class="btn secondary" onclick="suggest()">Genera suggerimento</button></div>
+  <div class="card"><h2>Materie</h2><p class="muted small">Parti da zero: aggiungi solo quelle che ti servono.</p><div id="subjects"></div><input id="ns" placeholder="Es. Matematica"><button class="btn secondary" onclick="addSub()">＋ Aggiungi materia</button></div>
+  <div class="card"><h2>Obiettivi futuri</h2><p class="muted small">Puoi fissare un obiettivo per qualsiasi giorno, per esempio una verifica.</p><div id="futureGoals"></div></div>
+  <div class="card"><h2>Routine</h2><p>📚 Scuola · 08:00–14:00</p><p>🏊 Nuoto · Lun–Ven, 15:00–17:00</p><p>🏋️ Palestra · Lun/Mer/Ven, flessibile</p><p>💼 Sabato mattina · Lavoro</p></div>
+</section>
+
+<section id="stats" class="view">
+  <div class="card"><div class="row"><h2>Andamento</h2><span id="periodLabel" class="pill">7 giorni</span></div><div class="seg"><button id="p7" class="active" onclick="setPeriod(7)">7 giorni</button><button id="p30" onclick="setPeriod(30)">30 giorni</button></div><div id="linechart" class="linechart"><div id="tooltip" class="chart-tooltip"></div><svg id="chartSvg" viewBox="0 0 600 250" preserveAspectRatio="none"></svg></div><div id="chartLabels" class="chart-labels"></div><p id="chartInfo" class="muted small"></p></div>
+  <div class="card"><h2>Per materia</h2><div id="bys"></div></div>
+</section>
+
+<section id="awards" class="view">
+  <div class="card">
+    <div class="row">
+      <div><div class="small muted">LIVELLO</div><div id="level" class="level">1</div><div id="titleName"><b>Inizio</b></div></div>
+      <div style="text-align:right"><b id="xpTotal">0 XP</b><div class="small muted">totali</div><div id="streakTop" class="streak">🔥 0 giorni</div></div>
+    </div>
+    <div class="xpbar"><div id="xpfill" class="xpfill"></div></div>
+    <div id="xplabel" class="small muted"></div>
+  </div>
+  <div class="card">
+    <div class="row"><h2>Streak</h2><span id="streakBig" class="pill">🔥 0 giorni</span></div>
+    <p id="streakText" class="muted small">Registra almeno una sessione ogni giorno per mantenere la streak accesa.</p>
+  </div>
+  <div class="card">
+    <div class="row"><h2>Come guadagni XP</h2><span class="pill">Più fai, più sali</span></div>
+    <div class="reward"><div class="reward-icon">▶</div><div><b>Sessione di studio</b><div class="small muted">1 XP per ogni minuto registrato · minimo 10 XP</div></div></div>
+    <div class="reward"><div class="reward-icon">✓</div><div><b>Obiettivo completato</b><div class="small muted">+50 XP</div></div></div>
+    <div class="reward"><div class="reward-icon">🔥</div><div><b>Streak</b><div class="small muted">Mantieni la tua streak studiando ogni giorno.</div></div></div>
+  </div>
+  <div class="card"><div class="row"><h2>Progressione</h2><span class="pill">Livello 1 → 100</span></div><p class="muted small">Ogni livello ti avvicina al prossimo titolo. I titoli importanti si sbloccano lungo il percorso.</p><div id="rewards"></div></div>
+</section>
+</main>
+
+<nav class="nav"><button class="active" onclick="show('home',this)"><div class="icon">⌂</div>Home</button><button onclick="show('plan',this)"><div class="icon">☰</div>Piano</button><button onclick="show('stats',this)"><div class="icon">⌁</div>Statistiche</button><button onclick="show('awards',this)"><div class="icon">★</div>Livello</button></nav>
+
+<div id="session" class="modal"><div class="sheet"><h2>Registra sessione</h2><label>Materia</label><select id="ss"></select><label>Minuti</label><input id="min" type="number" value="30" min="1" step="5"><button class="btn" onclick="saveSession()">Salva sessione</button><button class="btn secondary" onclick="closeM('session')">Annulla</button></div></div>
+<div id="goal" class="modal"><div class="sheet"><h2>Nuovo obiettivo</h2><label>Obiettivo</label><input id="gt" placeholder="Es. Prepararmi alla verifica di matematica"><label>Materia</label><select id="gs"></select><label>Data</label><input id="gd" type="date"><label>Priorità</label><select id="gp"><option>Alta</option><option selected>Media</option><option>Bassa</option></select><button class="btn" onclick="saveGoal()">Aggiungi obiettivo</button><button class="btn secondary" onclick="closeM('goal')">Annulla</button></div></div>
+<div id="toast" class="toast"></div>
+<div id="celebrate" class="modal"><div class="sheet" style="text-align:center;padding-top:28px">
+  <div id="celebrateIcon" style="font-size:54px">✦</div>
+  <div class="small muted">SBLOCCATO</div>
+  <h2 id="celebrateTitle" style="font-size:26px;margin:6px 0"></h2>
+  <p id="celebrateText" class="muted"></p>
+  <button class="btn" onclick="closeM('celebrate')">Continua</button>
+</div></div>
+
+<script>
+const K='studio-v3';
+let d=JSON.parse(localStorage.getItem(K)||'null')||{subjects:[],goals:[],sessions:[],sports:{swim:false,gym:false},xp:0,seenUnlocks:[]};
+if(!d.subjects)d.subjects=[];if(!d.goals)d.goals=[];if(!d.sessions)d.sessions=[];if(!d.sports)d.sports={swim:false,gym:false};if(typeof d.xp!=='number')d.xp=0;if(!Array.isArray(d.seenUnlocks))d.seenUnlocks=[];
+let period=7;
+const titles=[[1,'Inizio'],[5,'Avviato'],[10,'Costante'],[15,'Affidabile'],[20,'Solido'],[25,'Disciplinato'],[30,'Avanzato'],[35,'Esperto'],[40,'Specialista'],[45,'Veterano'],[50,'Eccellente'],[55,'Rigoroso'],[60,'Maestro'],[65,'Elite'],[70,'Vertice'],[75,'Dominante'],[80,'Leggenda'],[85,'Eccellenza'],[90,'Assoluto'],[95,'Fuoriclasse'],[100,'Irraggiungibile']];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isoToday=()=>{let x=new Date();x.setHours(0,0,0,0);return x.toISOString().slice(0,10)};
+const today=x=>new Date(x).toDateString()===new Date().toDateString();
+const mins=()=>d.sessions.filter(x=>today(x.date)).reduce((a,x)=>a+x.minutes,0);
+function xpForLevel(l){return l<=1?0:100*(l-1)+25*(l-1)*(l-2)}
+function levelFromXP(xp){let l=1;for(let n=2;n<=100;n++){if(xp>=xpForLevel(n))l=n;else break}return l}
+function titleForLevel(l){let t='Inizio';for(const x of titles){if(l>=x[0])t=x[1];else break}return t}
+function save(){localStorage.setItem(K,JSON.stringify(d));render()}
+function toast(t){let e=document.getElementById('toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1800)}
+function celebrateLevel(l){celebrateIcon.textContent=l>=80?'✦':l>=50?'◆':l>=20?'●':'✓';celebrateTitle.textContent=`Livello ${l} · ${titleForLevel(l)}`;celebrateText.textContent=l===2?'Hai sbloccato il primo livello.':'Nuovo titolo sbloccato. Continua un livello alla volta.';document.getElementById('celebrate').classList.add('open')}
+function awardXP(amount,reason){const before=levelFromXP(d.xp);d.xp+=amount;const after=levelFromXP(d.xp);for(let l=before+1;l<=after;l++){if(l===2||l===3||l%5===0||l===100){const k=String(l);if(!d.seenUnlocks.includes(k)){d.seenUnlocks.push(k);setTimeout(()=>celebrateLevel(l),150)}}}save();if(reason)toast(reason+' · +'+amount+' XP')}
+
+function streakDays(){
+  const days=new Set(d.sessions.map(s=>new Date(s.date).toISOString().slice(0,10)));
+  let cur=new Date(); cur.setHours(0,0,0,0);
+  let key=cur.toISOString().slice(0,10);
+  if(!days.has(key)){cur.setDate(cur.getDate()-1);key=cur.toISOString().slice(0,10);if(!days.has(key))return 0}
+  let count=0;
+  while(days.has(key)){
+    count++;
+    cur.setDate(cur.getDate()-1);
+    key=cur.toISOString().slice(0,10);
+  }
+  return count;
+}
+
+function render(){
+ const m=mins(),todayGoals=d.goals.filter(g=>!g.date||g.date===isoToday()),level=levelFromXP(d.xp),cur=xpForLevel(level),next=level<100?xpForLevel(level+1):xpForLevel(100),span=Math.max(1,next-cur);
+ time.innerHTML=`${Math.floor(m/60)}h ${String(m%60).padStart(2,'0')}m <span class="muted" style="font-size:15px;font-weight:400">/ 3h ideali</span>`;
+ bar.style.width=(m<=180?m/180*100:100)+'%';bar.style.background=m>180?'var(--red)':m>=90?'var(--blue)':'var(--light)';
+ status.textContent=m>=180?'3h raggiunte':m>=90?'Minimo raggiunto':'In corso';
+ msg.textContent=m>=180?'Obiettivo ideale raggiunto. Puoi continuare quanto vuoi.':m>=90?`Minimo raggiunto. Mancano ${180-m} minuti alle 3 ore.`:`Il minimo è 1h30. Mancano ${Math.max(0,90-m)} minuti. Non pensare a tutto: fai partire i primi 5 minuti.`;
+ gc.textContent=todayGoals.filter(g=>g.done).length+'/'+todayGoals.length+' completati';
+ goals.innerHTML=todayGoals.length?todayGoals.map(g=>{let i=d.goals.indexOf(g);return `<div class="item"><input type="checkbox" ${g.done?'checked':''} onchange="toggle(${i})"><div class="desc ${g.done?'done':''}"><b>${esc(g.title)}</b><div class="tag">${esc(g.subject||'Generale')} · Priorità ${esc(g.priority||'Media')}</div></div><button style="border:0;background:none;color:var(--muted);font-size:18px" onclick="delGoal(${i})">×</button></div>`}).join(''):'<div class="empty">Nessun obiettivo per oggi. Nessun obiettivo per oggi.</div>';
+ swim.checked=!!d.sports.swim;gym.checked=!!d.sports.gym;
+ const opts=d.subjects.map(s=>`<option>${esc(s)}</option>`).join('');ss.innerHTML=opts||'<option value="">Aggiungi prima una materia</option>';gs.innerHTML=opts||'<option value="">Nessuna materia</option>';
+ subjects.innerHTML=d.subjects.length?d.subjects.map((s,i)=>`<div class="item"><div class="desc">${esc(s)}</div><button style="border:0;background:none;color:var(--muted);font-size:18px" onclick="delSub(${i})">×</button></div>`).join(''):'<div class="empty">Nessuna materia ancora.</div>';
+ futureGoals.innerHTML=renderFutureGoals();
+ bys.innerHTML=d.subjects.length?d.subjects.map(s=>{let n=d.sessions.filter(x=>x.subject===s).reduce((a,x)=>a+x.minutes,0);return `<div class="item"><span>${esc(s)}</span><b style="margin-left:auto">${Math.floor(n/60)}h ${n%60}m</b></div>`}).join(''):'<div class="empty">Aggiungi una materia quando ti serve.</div>';
+ alert.innerHTML=new Date().getHours()>=20&&m<90?'<div class="notice"><b>Sono le 20:00.</b> Il minimo di 1h30 non è ancora raggiunto. Non rimandare: fai almeno un blocco adesso.</div>':'';
+ startMsg.textContent=m===0?'Apri Exocus e fai partire il timer. Registra la sessione quando hai finito.':m<90?'Hai già iniziato. Continua senza pensare alle 3 ore.':'Sei partito. Ora lascia che il tempo faccia il suo lavoro.';
+ document.getElementById('level').textContent=level;document.getElementById('titleName').innerHTML=`<div class="level-title">${titleForLevel(level)}</div>`;document.getElementById('xpTotal').textContent=d.xp+' XP';document.getElementById('xpfill').style.width=(level>=100?100:Math.min(100,(d.xp-cur)/span*100))+'%';document.getElementById('xplabel').textContent=level>=100?'Livello massimo raggiunto · 100 / 100':`${d.xp-cur} / ${span} XP · ${next-d.xp} XP al livello ${level+1}`;
+ const streak=streakDays();
+ const st=document.getElementById('streakTop');
+ const sb=document.getElementById('streakBig');
+ const stx=document.getElementById('streakText');
+ if(st)st.textContent=`🔥 ${streak} ${streak===1?'giorno':'giorni'}`;
+ if(sb)sb.textContent=`🔥 ${streak} ${streak===1?'giorno':'giorni'}`;
+ if(stx)stx.textContent=streak>0?`Streak accesa: ${streak} ${streak===1?'giorno':'giorni'} consecutivi. Mantienila viva.`:'Registra una sessione oggi per accendere la streak.';
+
+ renderRewards(level);suggest();renderChart()
+}
+function renderFutureGoals(){let a=d.goals.filter(g=>g.date&&g.date!==isoToday()).sort((x,y)=>x.date.localeCompare(y.date));if(!a.length)return '<div class="empty">Nessun obiettivo futuro.</div>';return a.map(g=>{let i=d.goals.indexOf(g);return `<div class="item"><input type="checkbox" ${g.done?'checked':''} onchange="toggle(${i})"><div class="desc ${g.done?'done':''}"><b>${esc(g.title)}</b><div class="tag">${esc(g.subject||'Generale')} · ${new Date(g.date+'T12:00').toLocaleDateString('it-IT',{day:'numeric',month:'short',year:'numeric'})}</div></div><button style="border:0;background:none;color:var(--muted);font-size:18px" onclick="delGoal(${i})">×</button></div>`}).join('')}
+function show(id,b){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active')}
+function openM(id){if(id==='goal')gd.value=isoToday();document.getElementById(id).classList.add('open')}
+function closeM(id){document.getElementById(id).classList.remove('open')}
+function saveSession(){let n=+min.value;if(!Number.isFinite(n)||n<1)return alert('Inserisci una durata valida.');if(!ss.value)return alert('Aggiungi prima una materia.');let first=mins()===0;d.sessions.push({date:new Date().toISOString(),subject:ss.value,minutes:Math.round(n)});awardXP(Math.max(10,Math.round(n)),first?'Primo avvio registrato':'Sessione completata');closeM('session')}
+function saveGoal(){let t=gt.value.trim();if(!t)return alert('Scrivi un obiettivo.');if(!gs.value)return alert('Aggiungi prima una materia.');d.goals.push({title:t,subject:gs.value,priority:gp.value,date:gd.value||isoToday(),done:false});gt.value='';closeM('goal');save();toast('Obiettivo aggiunto')}
+function toggle(i){let was=d.goals[i].done;d.goals[i].done=!was;if(!was)awardXP(50,'Obiettivo completato');else save()}
+function delGoal(i){if(confirm('Eliminare questo obiettivo?')){d.goals.splice(i,1);save()}}
+function addSub(){let s=ns.value.trim();if(s&&!d.subjects.includes(s)){d.subjects.push(s);ns.value='';save()}}
+function delSub(i){let s=d.subjects[i];if(confirm('Eliminare la materia “'+s+'”?')){d.subjects.splice(i,1);save()}}
+function sports(){d.sports={swim:swim.checked,gym:gym.checked};save()}
+function suggest(){let m=mins();suggest.textContent=m<90?'Continua con il tuo piano di oggi.':m<180?`Hai già iniziato. Ti mancano ${180-m} minuti alle 3 ore, ma non è obbligatorio arrivarci.`:'3 ore raggiunte. Hai fatto la parte importante: sei partito e hai continuato.'}
+function renderRewards(level){let out='';for(let l=2;l<=100;l++){if(!(l===2||l===3||l%5===0||l===100))continue;let unlocked=level>=l,icon=l>=80?'✦':l>=50?'◆':l>=20?'●':'○',text=l===2?'Hai superato il primo ostacolo: iniziare.':l===100?'Il percorso completo.':`Titolo sbloccato: ${titleForLevel(l)}`;out+=`<div class="reward ${unlocked?'unlocked':'locked'}"><div class="reward-icon">${unlocked?icon:'🔒'}</div><div><b>Livello ${l} · ${titleForLevel(l)}</b><div class="small muted">${text}</div></div></div>`}rewards.innerHTML=out}
+function setPeriod(n){period=n;p7.classList.toggle('active',n===7);p30.classList.toggle('active',n===30);periodLabel.textContent=n+' giorni';renderChart()}
+function renderChart(){let now=new Date();now.setHours(0,0,0,0);let vals=[];for(let i=period-1;i>=0;i--){let x=new Date(now);x.setDate(now.getDate()-i);let n=d.sessions.filter(s=>new Date(s.date).toDateString()===x.toDateString()).reduce((a,s)=>a+s.minutes,0);vals.push({d:x,n})}let W=600,H=250,pad=20,max=Math.max(180,...vals.map(v=>v.n));let pts=vals.map((v,i)=>{let x=pad+(i/(vals.length-1||1))*(W-pad*2);let y=H-pad-(v.n/max)*(H-pad*2);return[x,y]});let path=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');let area=path+' L '+pts[pts.length-1][0]+' '+(H-pad)+' L '+pts[0][0]+' '+(H-pad)+' Z';let grids=[0,60,120,180].map(v=>{let y=H-pad-(v/max)*(H-pad*2);return `<line class="gridline" x1="${pad}" x2="${W-pad}" y1="${y}" y2="${y}"/>`}).join('');let circles=pts.map((p,i)=>`<circle class="point" data-i="${i}" cx="${p[0]}" cy="${p[1]}" r="${period===30?3.5:5}"/>`).join('');chartSvg.innerHTML=grids+`<path class="area" d="${area}"/><path class="line" d="${path}"/>`+circles;chartLabels.innerHTML=`<span>${vals[0].d.toLocaleDateString('it-IT',{day:'numeric',month:'short'})}</span><span>${vals[Math.floor(vals.length/2)].d.toLocaleDateString('it-IT',{day:'numeric',month:'short'})}</span><span>${vals[vals.length-1].d.toLocaleDateString('it-IT',{day:'numeric',month:'short'})}</span>`;chartInfo.textContent='Tocca un punto per vedere il tempo studiato. Cerca di far salire la linea, non di riempire una lista.';document.querySelectorAll('.point').forEach(p=>p.addEventListener('click',()=>{let v=vals[+p.dataset.i],r=chartSvg.getBoundingClientRect();tooltip.textContent=v.d.toLocaleDateString('it-IT',{weekday:'short',day:'numeric',month:'short'})+' · '+Math.floor(v.n/60)+'h '+(v.n%60)+'m';tooltip.style.left=((+p.getAttribute('cx')/600)*r.width-20)+'px';tooltip.style.top=((+p.getAttribute('cy')/250)*r.height-45)+'px';tooltip.style.display='block';setTimeout(()=>tooltip.style.display='none',2500)}))}
+render();
+</script>
+</body>
+</html>
